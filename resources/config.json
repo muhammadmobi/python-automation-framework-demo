@@ -1,0 +1,41 @@
+{
+  "topics": {
+    "subscription": {
+      "scene": "mhub/demo/cloud/{id}/scene",
+      "ShadowAccepted": "$aws/things/{id}/shadow/update/accepted",
+      "DeviceConfigure": "mhub/demo/cloud/{id}/config",
+      "Automation": "mhub/demo/cloud/{id}/automation"
+    },
+    "publish": {
+      "scene": "mhub/demo/mn/{id}/scene",
+      "ShadowUpdate": "$aws/things/{id}/shadow/update",
+      "DetectDevice": "mhub/demo/mn/{id}/device/detect",
+      "DeviceConfigure": "mhub/demo/mn/{id}/device/configure",
+      "Automation": "mhub/demo/mn/{id}/automation"
+    }
+  },
+  "node_ids": {
+    "4g": 7,
+    "3g": 6,
+    "2g": 24,
+    "1g": 8,
+    "fd": 9,
+    "sp": 51,
+    "sr": 43,
+    "cs": 410,
+    "pp": 49,
+    "4GDbId": "00000000-0000-4000-8000-000000000004",
+    "3GDbId": "00000000-0000-4000-8000-000000000003",
+    "2GDbId": "00000000-0000-4000-8000-000000000002",
+    "1GDbId": "00000000-0000-4000-8000-000000000001",
+    "FdDbId": "00000000-0000-4000-8000-000000000005",
+    "PpDbId": "00000000-0000-4000-8000-000000000006"
+  },
+  "command": {
+    "CreateCommand": 1,
+    "EditCommand": 2,
+    "DeleteCommand": 3,
+    "RunCommand": 4,
+    "SceneLoop": false
+  }
+}
