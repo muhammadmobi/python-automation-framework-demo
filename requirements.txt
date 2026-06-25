@@ -1,0 +1,13 @@
+# Core test framework — everything needed to run the offline suite.
+pytest>=7.4
+pytest-dependency>=0.6
+pytest-html>=4.1
+python-dotenv>=1.0
+
+# Quality gates.
+flake8>=6.1
+black>=23.9
+
+# Optional: only required to run against a real AWS IoT Core endpoint
+# (MHUB_TRANSPORT=aws). Not needed for the bundled offline simulator.
+# AWSIoTPythonSDK>=1.5.2
